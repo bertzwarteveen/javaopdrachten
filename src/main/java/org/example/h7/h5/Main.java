@@ -5,6 +5,6 @@ public class Main {
         Methods methods = new Methods();
      //   System.out.println(methods.theGreatest(8, 9));
      //   System.out.println(methods.theGreatest("appeltje", "sinaasappeltje"));
-        System.out.println(methods.factorial(5, 0));
+        System.out.println(methods.factorial(5));
     }
 }

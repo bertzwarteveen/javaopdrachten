@@ -11,11 +11,11 @@ public class Methods {
         return Math.max(a.length(), b.length());
     }
 
+    public int factorial(int factor) {
+        return factorial(factor, factor);
+    }
+
     public int factorial(int factor, int sum){
-        if (sum == 0){
-            sum = factor;
-            return factorial(factor, sum);
-        }
         if (factor > 1){
             sum = sum * (factor - 1);
             factor = factor - 1;

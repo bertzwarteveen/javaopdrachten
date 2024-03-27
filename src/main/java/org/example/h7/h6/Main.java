@@ -13,6 +13,7 @@ public class Main {
         row[2] = 3;
         long[] copy = row;
         copy[2]++;
+
         System.out.println(copy[2]);
         System.out.println(row[2]); // same reference
         //   System.out.println(copy[2]);
