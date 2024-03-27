@@ -21,16 +21,11 @@ public class Methods {
     // n + n
     public long[] run(int n) {
         if (n < 93) {
-            long[] fibonacciSequence  = new long[n];{};
+            long[] f = new long[n];{};
             for (int i = 0; i < n; i++) {
-                if(i < 2){
-                    fibonacciSequence[i] = 1;
-                }
-                else {
-                    fibonacciSequence[i] = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
-                }
+                f[i] = (i < 2) ? 1 : f[i-2] + f[i-1];
             }
-            return fibonacciSequence;
+            return f;
         }
         else return null;
     }
