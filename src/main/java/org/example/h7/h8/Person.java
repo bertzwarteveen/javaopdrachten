@@ -4,9 +4,12 @@ public class Person {
     private String name;
 
     public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-        this.gender = Gender.UNKNOWN;
+        this(name, age, Gender.UNKNOWN);
+    }
+    public Person(String name, int age, Gender gender){
+        setName(name);
+        setAge(age);
+        setGender(gender);
     }
 
     public void haveBirthday() {
@@ -45,13 +48,18 @@ public class Person {
 
     private Gender gender;
 
+//    @Override
+//    public void finalize() throws InterruptedException {
+//        Thread.sleep(100000);
+//
+//    }
     @Override
-    public String toString(){
+    public String toString() {
         return name + " (" + age + ") " + "is " + gender;
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         return age * name.hashCode() * gender.hashCode();
     }
 }

@@ -9,6 +9,7 @@ public class Main {
         //    System.out.println(Arrays.toString(methods.multiplyItems(new long[] {4, 3, 32, 5}, 65)));
         System.out.println(Arrays.toString(methods.run(66)));
 
+
         long[] row = new long[4];
         row[2] = 3;
         long[] copy = row;

@@ -18,7 +18,7 @@ public class Methods {
     public int factorial(int factor, int sum){
         if (factor > 1){
             sum = sum * (factor - 1);
-            factor = factor - 1;
+            factor--;
             return factorial(factor, sum);
         }
         else

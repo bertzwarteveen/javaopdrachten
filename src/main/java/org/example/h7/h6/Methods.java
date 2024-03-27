@@ -31,6 +31,7 @@ public class Methods {
                 }
             }
             return fibonacciSequence;
-        } else return null;
+        }
+        else return null;
     }
 }
